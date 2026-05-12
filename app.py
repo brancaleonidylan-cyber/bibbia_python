@@ -186,7 +186,11 @@ code.inline{background:var(--surface-2);padding:1px 6px;border-radius:4px;font-f
     <div><span class="shortcut">Ctrl+K</span> Reset sezione</div>
   </div>
 </aside>
-<main class="main" id="main"></main>
+</main>
+<main class="main" id="main">
+  <h1 style="font-size:22px;margin-bottom:10px;color:var(--text);">La Bibbia di Python</h1>
+  <p style="color:var(--text-2);">Se vedi questo testo, il server risponde correttamente. Se la pagina rimane vuota, controlla la console del browser e il log del server.</p>
+</main>
 </div>
 </body>
 </html>
@@ -199,6 +203,8 @@ def index():
 
 
 if __name__ == '__main__':
+  # Bind to all interfaces and use an explicit port so it's reachable
   # disable the automatic reloader which sets signal handlers
   # that may not be supported in some execution environments
-  app.run(debug=True, use_reloader=False)
+  print('Starting Flask on http://0.0.0.0:5000')
+  app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=False)
