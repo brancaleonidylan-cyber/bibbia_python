@@ -199,4 +199,6 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+  # disable the automatic reloader which sets signal handlers
+  # that may not be supported in some execution environments
+  app.run(debug=True, use_reloader=False)
