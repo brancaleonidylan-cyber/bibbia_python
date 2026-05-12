@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Bibbia di Python — Dal principiante al Business Analyst</title>
+<title>La Bibbia_di_Python — Dal principiante al Business Analyst</title>
 <style>
 :root{
   --bg:#FAFAF7;--surface:#FFFFFF;--surface-2:#F1EFE8;--text:#2C2C2A;--text-2:#5F5E5A;--text-3:#888780;
